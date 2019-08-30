@@ -1,0 +1,40 @@
+{
+  "name": "clientapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --hot --open",
+    "webpack": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "@types/node": "^12.7.2",
+    "angular2-template-loader": "^0.6.2",
+    "aspnet-webpack": "^3.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "html-loader": "^0.5.5",
+    "jquery": "^3.4.1",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "dependencies": {
+    "@angular/common": "^8.2.3",
+    "@angular/compiler": "^8.2.3",
+    "@angular/core": "^8.2.3",
+    "@angular/forms": "^8.2.3",
+    "@angular/platform-browser": "^8.2.3",
+    "@angular/platform-browser-dynamic": "^8.2.3",
+    "@angular/router": "^8.2.3",
+    "core-js": "^3.2.1",
+    "rxjs": "^6.5.2",
+    "zone.js": "^0.10.2"
+  }
+}

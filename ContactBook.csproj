@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="clientapp\src\app.types.ts" />
+    <None Remove="clientapp\src\components\addContact.component.ts" />
+    <None Remove="clientapp\src\components\addTelephone.component.ts" />
+    <None Remove="clientapp\src\components\changeTelephones.component.ts" />
+    <None Remove="clientapp\src\components\table.component.ts" />
+    <None Remove="clientapp\src\data.service.ts" />
+    <None Remove="clientapp\src\main.ts" />
+    <None Remove="clientapp\src\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="clientapp\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="clientapp\src\components\addContact.component.ts" />
+    <TypeScriptCompile Include="clientapp\src\components\addTelephone.component.ts" />
+    <TypeScriptCompile Include="clientapp\src\components\app.component.ts" />
+    <TypeScriptCompile Include="clientapp\src\app.module.ts" />
+    <TypeScriptCompile Include="clientapp\src\components\changeContact.component.ts" />
+    <TypeScriptCompile Include="clientapp\src\components\table.component.ts" />
+    <TypeScriptCompile Include="clientapp\src\components\changeTelephones.component.ts" />
+    <TypeScriptCompile Include="clientapp\src\data.service.ts" />
+    <TypeScriptCompile Include="clientapp\src\main.ts" />
+    <TypeScriptCompile Include="clientapp\src\polyfills.ts" />
+    <TypeScriptCompile Include="clientapp\src\app.types.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties clientapp_4package_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

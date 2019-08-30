@@ -1,0 +1,21 @@
+﻿<div class="col">
+    <label>
+        Имя
+        <input type="text" [(ngModel)]="firstName" class="form-control" />
+    </label><br />
+    <label>
+         Фамилия
+        <input type="text" [(ngModel)]="lastName" class="form-control" />
+    </label><br />
+    <label>
+         Отчество
+    <input type="text" [(ngModel)]="patronymic" class="form-control" />
+    </label><br />
+    <label>
+         Адрес
+    <input type="text" [(ngModel)]="address" class="form-control" />
+    </label><br />
+
+    <input type="submit" class="btn btn-primary mb-3" value="Принять изменения" (click)="this.Submit()" /><br />
+    <input type="submit" class="btn btn-primary" value="Отмена" (click)="this.Cancel()" />
+</div>

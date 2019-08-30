@@ -1,0 +1,14 @@
+G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.csprojAssemblyReference.cache
+G:\projects\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.deps.json
+G:\projects\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.runtimeconfig.json
+G:\projects\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.runtimeconfig.dev.json
+G:\projects\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.dll
+G:\projects\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.pdb
+G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.csproj.CoreCompileInputs.cache
+G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.RazorAssemblyInfo.cache
+G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.RazorAssemblyInfo.cs
+G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.AssemblyInfoInputs.cache
+G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.AssemblyInfo.cs
+G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.RazorTargetAssemblyInfo.cache
+G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.dll
+G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.pdb

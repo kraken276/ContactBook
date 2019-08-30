@@ -1,0 +1,49 @@
+﻿<div class="col">
+    <table cellpadding="7" class="table table-bordered">
+    <thead>
+        <tr>
+            <td>
+                ФИО
+            </td>
+            <td>
+                Адрес
+            </td>
+            <td>
+                Телефоны
+            </td>
+            <td>
+                Кнопка 1
+            </td>
+            <td>
+                Кнопка 2
+            </td>
+            <td>
+                Кнопка 3
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contact of contacts">
+            <td>
+             {{contact.firstName + " " + contact.lastName + " " + contact.patronymic}}
+            </td>
+            <td>
+              {{contact.address}}
+            </td>
+            <td>
+              <div *ngFor="let telephone of contact.telephones" >{{telephone.Str()}}<br /></div>
+            </td>
+            <td>
+                <input type="submit" class="btn btn-primary" value="Изменить контакт" (click)="this.changeContact(contact)"/>
+            </td>
+            <td>
+                <input type="submit" class="btn btn-primary" value="Добавить номер" (click)="this.addNumber(contact)"/>
+            </td>
+            <td>
+                <input type="submit" class="btn btn-primary" value="Изменить номера" (click)="this.changeNumbers(contact)"/>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    <input type="submit" class="btn btn-primary" (click)="this.addContact()" value="Добавить контакт" />
+</div>
