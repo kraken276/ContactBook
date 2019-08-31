@@ -19,7 +19,7 @@ export class ChangeTelephoneComponent implements OnInit {
     }
 
     Submit() {
-        let exit: boolean;
+        let exit: boolean = false;
         this.telephones.map(item => {
             console.log(item);
             let phoneNumber = item.phoneNumber;

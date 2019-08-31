@@ -3,6 +3,6 @@
         <label>{{i + 1}}-й телефон</label>
         <input [(ngModel)]="telephones[i].phoneNumber" type="text" class="form-control" value={{telephone.phoneNumber}}/><br />
     </div>
-    <input type="submit" class="btn btn-primary mb-3" value="Принять изменения" (click)="this.Submit()"/><br />
-    <input type="submit" class="btn btn-primary" value="Отмена" (click)="this.Cancel()"/>
+    <input type="submit" class="btn btn-primary mb-3" value="Принять изменения" (click)="Submit()"/><br />
+    <input type="submit" class="btn btn-primary" value="Отмена" (click)="Cancel()"/>
 </div>

@@ -39,6 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="clientapp\public\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

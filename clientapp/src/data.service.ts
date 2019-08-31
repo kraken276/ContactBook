@@ -124,7 +124,7 @@ export class DataService {
 
     editTelephones(id: number, phoneNumber: number, contactId: number) {
         let _type: string = 'GET';
-        let _url: string = 'Contact/Edit?id=' + id + '&phoneNumber=' + phoneNumber;
+        let _url: string = 'Telephone/Edit?id=' + id + '&phoneNumber=' + phoneNumber;
         let self = this;
         $.ajax({
             type: _type,

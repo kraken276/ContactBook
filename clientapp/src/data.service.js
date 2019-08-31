@@ -111,7 +111,7 @@ var DataService = /** @class */ (function () {
     };
     DataService.prototype.editTelephones = function (id, phoneNumber, contactId) {
         var _type = 'GET';
-        var _url = 'Contact/Edit?id=' + id + '&phoneNumber=' + phoneNumber;
+        var _url = 'Telephone/Edit?id=' + id + '&phoneNumber=' + phoneNumber;
         var self = this;
         $.ajax({
             type: _type,

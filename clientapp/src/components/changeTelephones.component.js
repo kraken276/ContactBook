@@ -20,7 +20,7 @@ var ChangeTelephoneComponent = /** @class */ (function () {
     };
     ChangeTelephoneComponent.prototype.Submit = function () {
         var _this = this;
-        var exit;
+        var exit = false;
         this.telephones.map(function (item) {
             console.log(item);
             var phoneNumber = item.phoneNumber;
