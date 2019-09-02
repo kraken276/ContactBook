@@ -12,3 +12,17 @@ G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.AssemblyInfo.cs
 G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.RazorTargetAssemblyInfo.cache
 G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.dll
 G:\projects\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.pdb
+G:\clones\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.deps.json
+G:\clones\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.runtimeconfig.json
+G:\clones\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.runtimeconfig.dev.json
+G:\clones\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.dll
+G:\clones\ContactBook\bin\Debug\netcoreapp2.1\ContactBook.pdb
+G:\clones\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.csprojAssemblyReference.cache
+G:\clones\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.csproj.CoreCompileInputs.cache
+G:\clones\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.RazorAssemblyInfo.cache
+G:\clones\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.RazorAssemblyInfo.cs
+G:\clones\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.AssemblyInfoInputs.cache
+G:\clones\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.AssemblyInfo.cs
+G:\clones\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.RazorTargetAssemblyInfo.cache
+G:\clones\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.dll
+G:\clones\ContactBook\obj\Debug\netcoreapp2.1\ContactBook.pdb

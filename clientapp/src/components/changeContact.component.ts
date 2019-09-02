@@ -28,7 +28,7 @@ export class ChangeContactComponent {
     Submit() {
         if (this.firstName == "" || this.lastName == "" || this.patronymic == "" || this.address == "")
             return;
-        let letters = /^[A-Za-z]+$/;
+        let letters = /^[А-Яа-я A-Za-z]+$/;
         if (!this.firstName.match(letters) || !this.lastName.match(letters) || !this.patronymic.match(letters))
             return;
         this.dataService.editContact(this.contact.id, this.firstName, this.lastName, this.patronymic, this.address);

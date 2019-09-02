@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\projects\\ContactBook\\ContactBook.csproj": {}
+    "G:\\clones\\ContactBook\\ContactBook.csproj": {}
   },
   "projects": {
-    "G:\\projects\\ContactBook\\ContactBook.csproj": {
+    "G:\\clones\\ContactBook\\ContactBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\projects\\ContactBook\\ContactBook.csproj",
+        "projectUniqueName": "G:\\clones\\ContactBook\\ContactBook.csproj",
         "projectName": "ContactBook",
-        "projectPath": "G:\\projects\\ContactBook\\ContactBook.csproj",
+        "projectPath": "G:\\clones\\ContactBook\\ContactBook.csproj",
         "packagesPath": "C:\\Users\\Nikita\\.nuget\\packages\\",
-        "outputPath": "G:\\projects\\ContactBook\\obj\\",
+        "outputPath": "G:\\clones\\ContactBook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\PROGRAM FILES\\DOTNET\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Nikita\\AppData\\Roaming\\NuGet\\NuGet.Config",
