@@ -16,10 +16,10 @@ var AddTelephoneComponent = /** @class */ (function () {
         this.router = router;
     }
     AddTelephoneComponent.prototype.Submit = function () {
-        var phoneNumber = this.phoneNumber;
+        var phoneNumber = +this.phoneNumber;
         if (phoneNumber % 1 != 0 || phoneNumber / 10000000000 > 10 || phoneNumber / 10000000000 < 1)
             return;
-        this.dataService.addTelephone(phoneNumber, this.dataService.getSelectedContact().id);
+        this.dataService.addTelephone(this.phoneNumber, this.dataService.getSelectedContact().id);
         this.router.navigate([""]);
     };
     AddTelephoneComponent.prototype.Cancel = function () {

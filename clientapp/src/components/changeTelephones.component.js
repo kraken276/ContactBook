@@ -23,12 +23,12 @@ var ChangeTelephoneComponent = /** @class */ (function () {
         var exit = false;
         this.telephones.map(function (item) {
             console.log(item);
-            var phoneNumber = item.phoneNumber;
+            var phoneNumber = +item.phoneNumber;
             if (phoneNumber % 1 != 0 || phoneNumber / 10000000000 > 10 || phoneNumber / 10000000000 < 1) {
                 exit = true;
                 return;
             }
-            _this.dataService.editTelephones(item.id, phoneNumber, item.contactId);
+            _this.dataService.editTelephones(item.id, item.phoneNumber, item.contactId);
         });
         if (exit)
             return;

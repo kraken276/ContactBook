@@ -18,6 +18,9 @@ var AddContactComponent = /** @class */ (function () {
     AddContactComponent.prototype.Submit = function () {
         if (typeof this.firstName == "undefined" || typeof this.lastName == "undefined" || typeof this.patronymic == "undefined" || typeof this.address == "undefined")
             return;
+        var letters = /^[A-Za-z]+$/;
+        if (!this.firstName.match(letters) || !this.lastName.match(letters) || !this.patronymic.match(letters))
+            return;
         this.dataService.addContact(this.firstName, this.lastName, this.patronymic, this.address);
         this.router.navigate([""]);
     };

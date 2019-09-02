@@ -49,7 +49,7 @@ export class DataService {
             type: _type,
             url: _url,
             success: function (response) {
-                response.map((item: { id: number, phoneNumber: number, contactId: number }) => {
+                response.map((item: { id: number, phoneNumber: string, contactId: number }) => {
                     let telephone: Telephone = new Telephone(item.id, item.phoneNumber, item.contactId);
                     contact.telephones.push(telephone);
                 });
@@ -105,7 +105,7 @@ export class DataService {
         });
     }
 
-    addTelephone(phoneNumber: number, contactId: number) {
+    addTelephone(phoneNumber: string, contactId: number) {
         let _type: string = 'GET';
         let _url: string = 'Telephone/Create?phoneNumber=' + phoneNumber + '&contactId=' + contactId;
         let self = this;
@@ -122,7 +122,7 @@ export class DataService {
         });
     }
 
-    editTelephones(id: number, phoneNumber: number, contactId: number) {
+    editTelephones(id: number, phoneNumber: string, contactId: number) {
         let _type: string = 'GET';
         let _url: string = 'Telephone/Edit?id=' + id + '&phoneNumber=' + phoneNumber;
         let self = this;

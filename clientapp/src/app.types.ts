@@ -19,25 +19,18 @@ export class Contact {
 
 export class Telephone {
     id: number;
-    phoneNumber: number;
+    phoneNumber: string;
     contactId: number
 
-    constructor(id: number, phoneNumber: number, contactId: number) {
+    constructor(id: number, phoneNumber: string, contactId: number) {
         this.id = id;
         this.phoneNumber = phoneNumber;
         this.contactId = contactId;
     }
 
     Str(): string {
-        let numb = this.phoneNumber;
-        let str = "+";
-        str += Math.trunc(numb / 10000000000).toString() + "(";
-        numb %= 10000000000;
-        str += Math.trunc(numb / 10000000).toString() + ")";
-        numb %= 10000000;
-        str += Math.trunc(numb / 10000).toString() + "-";
-        numb %= 10000;
-        str += Math.trunc(numb / 100).toString() + "-" + (numb % 100).toString();
-        return str;
+        return "+" + this.phoneNumber.toString().substr(0, 1) + "("
+            + this.phoneNumber.toString().substr(1, 3) + ")" + this.phoneNumber.toString().substr(4, 3) + "-"
+            + this.phoneNumber.toString().substr(7, 2) + "-" + this.phoneNumber.toString().substr(9, 2);
     }
 }

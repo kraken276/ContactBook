@@ -22,12 +22,12 @@ export class ChangeTelephoneComponent implements OnInit {
         let exit: boolean = false;
         this.telephones.map(item => {
             console.log(item);
-            let phoneNumber = item.phoneNumber;
+            let phoneNumber = +item.phoneNumber;
             if (phoneNumber % 1 != 0 || phoneNumber / 10000000000 > 10 || phoneNumber / 10000000000 < 1) {
                 exit = true;
                 return;
             }
-            this.dataService.editTelephones(item.id, phoneNumber, item.contactId);
+            this.dataService.editTelephones(item.id, item.phoneNumber, item.contactId);
         });
         if (exit)
             return;

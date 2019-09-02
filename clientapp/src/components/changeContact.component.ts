@@ -19,10 +19,18 @@ export class ChangeContactComponent {
 
     ngOnInit() {
         this.contact = this.dataService.getSelectedContact();
-        console.log(this.contact);
+        this.firstName = this.contact.firstName;
+        this.lastName = this.contact.lastName;
+        this.patronymic = this.contact.patronymic;
+        this.address = this.contact.address;
     }
 
     Submit() {
+        if (this.firstName == "" || this.lastName == "" || this.patronymic == "" || this.address == "")
+            return;
+        let letters = /^[A-Za-z]+$/;
+        if (!this.firstName.match(letters) || !this.lastName.match(letters) || !this.patronymic.match(letters))
+            return;
         this.dataService.editContact(this.contact.id, this.firstName, this.lastName, this.patronymic, this.address);
         this.router.navigate([""]);
     }

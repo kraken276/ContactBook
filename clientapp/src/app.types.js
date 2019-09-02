@@ -17,16 +17,9 @@ var Telephone = /** @class */ (function () {
         this.contactId = contactId;
     }
     Telephone.prototype.Str = function () {
-        var numb = this.phoneNumber;
-        var str = "+";
-        str += Math.trunc(numb / 10000000000).toString() + "(";
-        numb %= 10000000000;
-        str += Math.trunc(numb / 10000000).toString() + ")";
-        numb %= 10000000;
-        str += Math.trunc(numb / 10000).toString() + "-";
-        numb %= 10000;
-        str += Math.trunc(numb / 100).toString() + "-" + (numb % 100).toString();
-        return str;
+        return "+" + this.phoneNumber.toString().substr(0, 1) + "("
+            + this.phoneNumber.toString().substr(1, 3) + ")" + this.phoneNumber.toString().substr(4, 3) + "-"
+            + this.phoneNumber.toString().substr(7, 2) + "-" + this.phoneNumber.toString().substr(9, 2);
     };
     return Telephone;
 }());
